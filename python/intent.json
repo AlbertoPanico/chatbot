@@ -1,0 +1,11 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Ciao", "Buongiorno", "Buonasera","Hey","Hi", "Hello"],
+     "responses": ["Ciao, posso esserti utile in qualche maniera?", 
+                   "Ciao, come posso rendermi utile?",
+                   "Ciao, cosa posso fare per te?"],
+     "context": [""]
+    }
+    
+]
+}
