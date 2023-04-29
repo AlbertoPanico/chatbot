@@ -16,5 +16,5 @@ class NeuralNetwork(nn.Module):
         output = self.l2(output)
         output = self.relu(output)
         output = self.l3(output)
-        # no activation and no softmax
+        # softmax are in chat.py
         return output
