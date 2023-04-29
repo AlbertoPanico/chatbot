@@ -26,6 +26,11 @@
                 "Buona giornata",
                 "Buona serata",
                 "Grazie"
+            ],
+            "responses": [
+                "Alla prosima",
+                "Ti auguro buona giornata",
+                "Spero di aver risolto il tuo problema, alla prossima"
             ]
         }
 ]
