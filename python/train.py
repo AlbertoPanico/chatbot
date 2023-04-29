@@ -91,7 +91,8 @@ if __name__ == '__main__':
         for (words, labels) in train_loader:
             
             words = words.to(device)
-            labels = labels.to(device)     
+            labels = labels.to(device, dtype=torch.int64)
+            # labels = labels.to(device)     
             
        
 
@@ -107,5 +108,6 @@ if __name__ == '__main__':
 
         if (epoch + 1) % 100 == 0:
             print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}')
+
 
     print(f'final loss, loss={loss.item():.4f}')
