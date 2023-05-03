@@ -26,7 +26,7 @@ model.eval()
 
 # ------------------ chatbot ----------------------
 
-bot_name = "Jon"
+bot_name = "John"
 print("Ciao! premi Q per uscire")
 while True:
     sentence = input('Tu: ')

@@ -18,3 +18,5 @@ We use pytorch
 We use a feed forward nn. The input layer is fully-connected, it has the number of pattern as dimension, then we have 2 hidden layer, then we have an output layer with the number of classes. In the end we apply a softmax to get y.
 
 5. CHATBOT
+
+6. CONNECT TO THE WEBSITEs
