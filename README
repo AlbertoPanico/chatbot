@@ -20,3 +20,5 @@ We use a feed forward nn. The input layer is fully-connected, it has the number 
 5. CHATBOT
 
 6. CONNECT TO THE WEBSITE
+
+7. CREATE APP.PY

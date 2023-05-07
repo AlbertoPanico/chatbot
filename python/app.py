@@ -4,11 +4,15 @@ from chat import get_response
 
 
 
-app = Flask(__name__)
+app = Flask(__name__) #  template_folder='templates'
+
+@app.route("/")
+def index():
+    return render_template('index.html')
 
 @app.get("/")
 def index_get():
-    return render_template("index.php")
+    return render_template("index.html")
 
 @app.post("/predict")
 def predict():
