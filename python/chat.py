@@ -27,16 +27,12 @@ model.eval()
 # ------------------ chatbot ----------------------
 
 bot_name = "John"
-print("Ciao! premi Q per uscire")
-while True:
-    sentence = input('Tu: ')
-    if (sentence == "Q" or sentence == "q") :
-        break
 
+def get_response(msg):
     sentence = tokenize(sentence)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1, x.shape[0])
-    x = torch.from_numpy(x)
+    x = torch.from_numpy(x).to(device)
 
     output = model(x)
     _, predicted = torch.max(output, dim=1)
@@ -53,3 +49,26 @@ while True:
 
     else:
         print(f'{bot_name}: Scusami, non ho capito.')
+
+
+
+
+if __name__ == "__main__":
+    print("Ciao! premi Q per uscire")
+    while True:
+        sentence = input('Tu: ')
+        if (sentence == "Q" or sentence == "q") :
+            break
+
+        resp = get_response(sentence)
+        print(resp)
+
+
+
+
+
+
+
+
+
+

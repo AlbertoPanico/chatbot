@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +30,7 @@
       </div>
       <div class="chat-logs">
        
-      </div><!--chat-log -->
+      </div>
     </div>
     <div class="chat-input">      
       <form>
@@ -43,8 +44,45 @@
   
   
 </div>
+
+<script>
+  $SCRIPT_ROOT = {{ request.script_root|tojson}};
+</script>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
+
+<script type="test/javascript" src="{{ url_for('static, filename='app.js) }}"></script>
 </body>
 </html>
+
+
+
+
+
+<!--
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Our Company</title>
+</head>
+
+<body>
+
+  <h1>Welcome to Our Company</h1>
+  <h2>Web Site Main Ingredients:</h2>
+
+  <p>Pages (HTML)</p>
+  <p>Style Sheets (CSS)</p>
+  <p>Computer Code (JavaScript)</p>
+  <p>Live Data (Files and Databases)</p>
+
+</body>
+</html>
+
+
+
+-->
