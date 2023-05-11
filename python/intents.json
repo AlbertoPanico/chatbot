@@ -20,7 +20,7 @@
             ]
         },
         {
-            "tag": ["android"],
+            "tag": "android",
             "patterns": [
                 "Posso usare Tunnel Bear sul mio smartphone Android?",
                 "Come posso usare Tunnel Bear sul mio Android?",
@@ -33,7 +33,7 @@
             "context":[]
         },
         {           
-             "tag": ["pc"],
+             "tag": "pc",
              "patterns": [
                 "Posso usare Tunnel Bear sul mio PC?",          
                 "Come posso usare Tunnel Bear sul mio PC?",
@@ -46,7 +46,7 @@
 
         },
         {
-            "tag":"IOs",   
+            "tag":"iOS",   
             "patterns":[
                 "Posso usare Tunnel Bear su iPhone/iPad?",
                 "Come posso usare Tunnel Bear su iPhone/iPad?",

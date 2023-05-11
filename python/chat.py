@@ -26,7 +26,7 @@ model.eval()
 
 # ------------------ chatbot ----------------------
 
-bot_name = "John"
+bot_name = "Yoghi"
 
 def get_response(msg):
     sentence = tokenize(sentence)
