@@ -29,7 +29,7 @@ for intent in intents['intents']:
         xy.append((w, tag))
 
 ignore_words = ['?', ',', '!', '.']
-all_words = [stem(w) for w in all_words if w not in ignore_words]
+all_words = (stem(w) for w in all_words if w not in ignore_words) # changed from [] to ()
 
 # we are going to remove duplicated words
 all_words = sorted(set(all_words))
