@@ -20,6 +20,80 @@
             ]
         },
         {
+            "tag": ["android"],
+            "patterns": [
+                "Posso usare Tunnel Bear sul mio smartphone Android?",
+                "Come posso usare Tunnel Bear sul mio Android?",
+                "Posso usarlo sul mio telefono android?"
+
+            ],
+            "responses": [
+                "Per utilizzare l'app di TunnelBear, basta scaricare l'app,  accedere (o registrarti), e connetterti ad un server vpn. Una volta fatto la tua connessione sarà rapida e sicura "
+            ],
+            "context":[]
+        },
+        {           
+             "tag": ["pc"],
+             "patterns": [
+                "Posso usare Tunnel Bear sul mio PC?",          
+                "Come posso usare Tunnel Bear sul mio PC?",
+                "Posso usarlo sul computer"
+
+            ],
+            "responses":["L'applicazione nativa TunnelBear è l'opzione consigliata se vuoi connetterti ai server TunnelBear sul tuo PC Windows. L'abbiamo progettata pensando alla tua esperienza, in modo da offrirti un facile accesso."
+            ],   
+            "context":[]
+
+        },
+        {
+            "tag":"IOs",   
+            "patterns":[
+                "Posso usare Tunnel Bear su iPhone/iPad?",
+                "Come posso usare Tunnel Bear su iPhone/iPad?",
+                "Posso usarlo sull'ipad",
+                "Posso usarlo sull'iphone"
+            ],     
+            "responses":[
+                "Per iniziare a utilizzare TunnelBear sul tuo dispositivo iOS, tutto ciò che devi fare è scaricare l'app TunnelBear, accedere (o registrarti) e connetterti a un server vpn. Una volta fatto, la connessione internet del tuo dispositivo Android sarà sicura e privata. Le seguenti istruzioni ti spiegano come eseguire questa procedura e configurare l'app TunnelBear per Android in base alle tue esigenze!"
+            ],
+            "context":[]
+
+        },
+        {
+            "tag":"Mac",
+            "patterns":[
+                "Posso usare Tunnel Bear sul mio Mac?",
+                "Come posso usare Tunnel Bear sul mio Mac?",
+                "Posso usarlo sul mac"
+            ],
+            "responses":[
+                "L'applicazione nativa TunnelBear è l'opzione consigliata se vuoi connetterti ai server TunnelBear sul tuo Mac. L'abbiamo progettata pensando alla tua esperienza, in modo da offrirti un facile accesso. Questo tutorial spiega come scaricare e installare l'app TunnelBear sui dispositivi MacOS, accedere e connettersi ai nostri server. Forniamo anche una panoramica delle impostazioni."
+            ]
+        },
+        {
+            "tag":"Chrome",
+            "patterns":[
+                "Posso usare Tunnel Bear attraverso un’estensione Google Chrome?",
+                "Posso usare Tunnel Bear su Chrome?",
+                "Posso utilizzarlo su Chrome?"
+            ],
+            "responses":[
+                "Se vuoi navigare in modo sicuro sul tuo dispositivo o nel tuo browser Chrome, puoi utilizzare la nostra apposita estensione che protegge il tuo traffico con HTTPS. Questo tutorial spiega come scaricare e installare l'estensione TunnelBear per Google Chrome, accedere e connettersi ai nostri server. Forniamo anche una panoramica delle impostazioni."
+            ]
+
+        },
+        {
+            "tag":"firefox",
+            "patterns":[
+                "Posso usare Tunnel Bear attraverso un’estensione Firefox?",
+                "Posso usare Tunnel Bear su Firefox?",
+                "Posso usarlo Firefox?"
+            ],
+            "responses":[
+                "Se vuoi navigare in modo sicuro sul tuo dispositivo o nel tuo browser Firefox, puoi utilizzare la nostra apposita estensione che protegge il tuo traffico con HTTPS. Questo tutorial spiega come scaricare e installare l'estensione TunnelBear per Firefox, accedere e connettersi ai nostri server. Forniamo anche una panoramica delle impostazioni."
+            ]
+        },
+        {
             "tag": "goodbye",
             "patterns": [
                 "Arrivederci",
