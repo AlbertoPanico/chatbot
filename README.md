@@ -1,6 +1,24 @@
 # Chatbot
 This projeect is made by **Alberto Panico**, **Angelo Nardella** and **Andrea Nigro**.  
 
+## Install
+```bash
+cd chatbot
+python3 -m venv venv
+# linux/mac
+./venv/bin/activate
+# windows
+./venv/Script/activate
+# 
+pip install torch numpy nltk
+
+# train
+python python/train.py
+# execute
+python python/chat.py
+
+```
+
 ## How Does It Works?
 
 1. ### DEFINE INTETNTS. 
