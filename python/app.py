@@ -1,17 +1,11 @@
 from flask import Flask, render_template, request, jsonify
 from chat import get_response
 
-
-
-app = Flask(__name__,  template_folder='templates') #  template_folder='templates'
-
-@app.route("/")
-def index():
-    return render_template('templates\index.html')
+app = Flask(__name__, template_folder='templates') #  template_folder='templates'
 
 @app.get("/")
 def index_get():
-    return render_template("templates\index.html")
+    return render_template("index.html")
 
 @app.post("/predict")
 def predict():
