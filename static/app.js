@@ -39,7 +39,7 @@ class Chatbox {
     }
 
     onSendButton(chatbox) {
-        var textField = chatbox.querySelector('input');
+        var textField = chatbox.querySelector('chat-input');
         let text1 = textField.value
         if (text1 === "") {
             return;
@@ -58,7 +58,7 @@ class Chatbox {
         })
         .then(r => r.json())
         .then(r => {
-            let msg2 = {name: 'John', message: r.answer};
+            let msg2 = {name: 'Yoghi', message: r.answer};
             this.messages.push(msg2);
             this.updateChatText(chatbox)
             textField.value = ''
