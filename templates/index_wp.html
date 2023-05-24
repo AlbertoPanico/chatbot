@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 <head>
 	<title>TunnelBear: Secure VPN Service</title>
-	<link rel="shortcut icon" type="image/png" href="pic\favicon.png">
+	<link rel="shortcut icon" type="image/png" href="pic/favicon.png">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" type="text/css" href="static\style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../static/style.css"> -->
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body style="margin: 0">
 <div>
-	<img src="pic\tunnelbear.png" style="width: 100%; height:auto;">
+	<img src="tunnelbear.png" style="width: 100%; height:auto;">
 </div>
 <div id="body"> 
   
@@ -63,9 +64,16 @@
 
   </div>  
 </div>
+<img src="{{ url_for('static', filename='pic/tunnelbear.png') }}"/>
+<script>
+  $SCRIPT_ROOT = {{request.script_root|tojson}};
+</script>
+<script type="test/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
-<script type="test/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+<!-- <script type="text/javascript" src="script.js"></script> -->
+
 </body>
 </html>
