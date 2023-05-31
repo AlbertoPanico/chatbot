@@ -2,11 +2,11 @@ from flask import Flask, render_template, request, jsonify
 from chat import get_response
 
 
-app = Flask(__name__, template_folder='../templates') #  template_folder='templates'
+app = Flask(__name__, template_folder='../template') #  template_folder='templates'
 
 @app.get("/")
 def index_get():
-    return render_template("index_wp.html")
+    return render_template("index.html")
 
 @app.post("/predict")
 def predict():
@@ -17,4 +17,4 @@ def predict():
     return jsonify(message)
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.2', debug=True)
+    app.run(debug=True) # host='127.0.0.2'
