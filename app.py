@@ -7,7 +7,7 @@ app = Flask(__name__, template_folder='template') #  template_folder='templates'
 
 @app.get("/")
 def index_get():
-    return render_template("index2.html")
+    return render_template("index_buono.html")
 
 @app.post("/predict")
 def predict():
