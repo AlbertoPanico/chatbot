@@ -6,7 +6,7 @@ from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('python/intents.json', 'r') as f:
+with open('intents.json', 'r') as f:
     intents = json.load(f)
 
 FILE = "data.pth"
@@ -29,7 +29,7 @@ model.eval()
 bot_name = "Yoghi"
 
 def get_response(msg):
-    sentence = tokenize(sentence)
+    sentence = tokenize(msg)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1, x.shape[0])
     x = torch.from_numpy(x).to(device)
@@ -45,7 +45,8 @@ def get_response(msg):
     if prob.item() > 0.75:
         for intent in intents["intents"]:
            if tag == intent["tag"]:
-              print(f'{bot_name}: {random.choice(intent["responses"])}')
+               # print(f'{bot_name}: {random.choice(intent["responses"])}')
+               return random.choice(intent["responses"])
 
     else:
         print(f'{bot_name}: Scusami, non ho capito.')
