@@ -50,6 +50,7 @@ def get_response(msg):
 
     else:
         print(f'{bot_name}: Scusami, non ho capito.')
+        return "Scusami, non ho capito."
 
 
 
