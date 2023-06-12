@@ -41,5 +41,3 @@ We can find the logic at the chatbot in `app.js`. The chatbot (Yoghi is the name
 We use Flask (`app.py`) to create our API.
 With @app.get("/") we return our webpage's template and with @app.post("/predict") we predict the response to the question you have asked, according to the logic and the traing part
 
-7. ### CREATE APP.PY
-> NOTE: Todo
