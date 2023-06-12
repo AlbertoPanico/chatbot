@@ -32,13 +32,14 @@ Now we want to train the model (`train.py`), so we import the function we had wr
 We use [pytorch](https://pytorch.org/)
 
 4. ### CREATE OUR NEURAL NETWORK.
-We use a feed forward nn. The input layer is fully-connected, it has the number of pattern as dimension, then we have 2 hidden layer, then we have an output layer with the number of classes. In the end we apply a softmax to get y.
+We use a feed forward nn. The input layer is fully-connected, it has the number of pattern as dimension, then we have 2 hidden layer, in th end we have an output layer with the number of classes. Now we apply a softmax to get y (the response is given if it has at least 75% according to the training part).
 
 5. ### CHATBOT
-> NOTE: Todo
+We can find the logic at the chatbot in `app.js`. The chatbot (Yoghi is the name we assigned to it) initially says to you what he can do with a welcome message, then you can type the message. He is able to answer at typical answer you can ask to a VPN service. If the message is longer then 100 character or you ask something he is not trained for, he displays an error message.
 
 6. ### CONNECT TO THE WEBSITE
-> NOTE: Todo
+We use Flask (`app.py`) to create our API.
+With @app.get("/") we return our webpage's template and with @app.post("/predict") we predict the response to the question you have asked, according to the logic and the traing part
 
 7. ### CREATE APP.PY
 > NOTE: Todo
