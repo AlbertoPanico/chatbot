@@ -28,7 +28,7 @@ class Chatbox {
     }
 
     prompt(chatbox) {
-        this.messages.push({ name: "Yoghi", message: "Welcome to DiGiCOR. I am DiGiCOR Chatbot, and I can help answer your simple queries. <br>  1. If you wish to compare our systems model side by side filtering to your specifications, visit <a href = 'https://digicor.com.au/advanced-search'> DiGiCOR Applicator</a> . <br> 2. If you wish to obtain pricing, say 'live agent' to speak to our staff." });
+        this.messages.push({ name: "Yoghi", message: "Benvenuto, mi chiamo Yoghi. Sono qui per aiutarti a risolvere i tuoi dubbi. <br>  Inizia scrivendo qui la tua domanda." });
         this.updateChatText(chatbox)
     }
 
