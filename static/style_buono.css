@@ -16,7 +16,7 @@ body {
     --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
-    --primary: #581B98;
+    --primary: #98961b;
 }
 
 /* CHATBOX
@@ -107,7 +107,8 @@ body {
 
 /* HEADER */
 .chatbox__header {
-    background: var(--primaryGradient);
+    /* background: var(--primaryGradient); */
+    background:#57981b;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -161,12 +162,13 @@ body {
 
 /* FOOTER */
 .chatbox__footer {
+    background:#57981b;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 20px 20px;
-    background: var(--secondaryGradient);
+    /* background: var(--secondaryGradient); */
     box-shadow: var(--secondaryBoxShadow);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
