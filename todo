@@ -15,3 +15,8 @@ path relativo
 .. = cartella padre 
 .\python = vai alla cartella python
 .\python\app.py = vai alla cartella python e poi al file py
+
+
+# da modificare
+index_buono
+css_buono
