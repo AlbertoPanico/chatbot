@@ -1,44 +1,47 @@
 $(function() {
-  var INDEX = 0; 
-  $("#chat-submit").click(function(e) {
-    e.preventDefault();
-    var msg = $("#chat-input").val(); 
-    if(msg.trim() == ''){
-      return false;
-    }
-    generate_message(msg, 'self');
-    var buttons = [
-        {
-          name: 'Existing User',
-          value: 'existing'
-        },
-        {
-          name: 'New User',
-          value: 'new'
-        }
-      ];
-
-    setTimeout(function() {      
-      generate_message(msg, 'user');  
-    }, 1000)
-    
-  })
+    var INDEX = 0; 
+    $("#chat-submit").click(function(e) {
+      e.preventDefault();
+      var msg = $("#chat-input").val(); 
+      if(msg.trim() == ''){
+        return false;
+      }
+      generate_message(msg, 'self');
+      var buttons = [
+          {
+            name: 'Existing User',
+            value: 'existing'
+          },
+          {
+            name: 'New User',
+            value: 'new'
+          }
+        ];
+        
   
-  function generate_message(msg, type) {
-    INDEX++;
-    if(type == 'user'){
-      var pic = "<img src=\"pic/bear.png\">";
-    }else{
-      var pic = "<img src=\"pic/self.png\">";
-    }
-    var str="";
-    str += "<div id='cm-msg-"+INDEX+"' class=\"chat-msg "+type+"\">";
-    str += "          <span class=\"msg-avatar\">";
-    str += pic;
-    str += "          <\/span>";
-    str += "          <div class=\"cm-msg-text\">";
-    str += msg;
-    str += "          <\/div>";
+      setTimeout(function() {      
+        generate_message(msg, 'user');  
+      }, 1000)
+      
+    })
+  
+  
+    
+    function generate_message(msg, type) {
+      INDEX++;
+      if(type == 'user'){
+        var pic = "<img src=\"pic/bear.png\">";
+      }else{
+        var pic = "<img src=\"pic/self.png\">";
+      }
+      var str="";
+      str += "<div id='cm-msg-"+INDEX+"' class=\"chat-msg "+type+"\">";
+      str += "          <span class=\"msg-avatar\">";
+      str += pic;
+      str += "          <\/span>";
+      str += "          <div class=\"cm-msg-text\">";
+      str += msg;
+      str += "          <\/div>";
     str += "        <\/div>";
     $(".chat-logs").append(str);
     $("#cm-msg-"+INDEX).hide().fadeIn(300);

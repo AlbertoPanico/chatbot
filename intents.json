@@ -28,7 +28,7 @@
 
             ],
             "responses": [
-                "Per utilizzare l'app di TunnelBear, basta scaricare l'app,  accedere (o registrarti), e connetterti ad un server vpn. Una volta fatto la tua connessione sarà rapida e sicura "
+                "Per utilizzare l'app di TunnelBear, basta scaricare l'app,  accedere (o registrarti), e connetterti ad un server vpn. Una volta fatto la tua connessione sar\u00e1 rapida e sicura "
             ],
             "context":[]
         },
@@ -40,7 +40,7 @@
                 "Posso usarlo sul computer"
 
             ],
-            "responses":["L'applicazione nativa TunnelBear è l'opzione consigliata se vuoi connetterti ai server TunnelBear sul tuo PC Windows. L'abbiamo progettata pensando alla tua esperienza, in modo da offrirti un facile accesso."
+            "responses":["L'applicazione nativa TunnelBear \u00e9 l'opzione consigliata se vuoi connetterti ai server TunnelBear sul tuo PC Windows. L'abbiamo progettata pensando alla tua esperienza, in modo da offrirti un facile accesso."
             ],   
             "context":[]
 
@@ -54,7 +54,7 @@
                 "Posso usarlo sull'iphone"
             ],     
             "responses":[
-                "Per iniziare a utilizzare TunnelBear sul tuo dispositivo iOS, tutto ciò che devi fare è scaricare l'app TunnelBear, accedere (o registrarti) e connetterti a un server vpn. Una volta fatto, la connessione internet del tuo dispositivo Android sarà sicura e privata. Le seguenti istruzioni ti spiegano come eseguire questa procedura e configurare l'app TunnelBear per Android in base alle tue esigenze!"
+                "Per iniziare a utilizzare TunnelBear sul tuo dispositivo iOS, tutto ciò che devi fare \u00e9 scaricare l'app TunnelBear, accedere (o registrarti) e connetterti a un server vpn. Una volta fatto, la connessione internet del tuo dispositivo Android sarà sicura e privata. Le seguenti istruzioni ti spiegano come eseguire questa procedura e configurare l'app TunnelBear per Android in base alle tue esigenze!"
             ],
             "context":[]
 
@@ -67,7 +67,7 @@
                 "Posso usarlo sul mac"
             ],
             "responses":[
-                "L'applicazione nativa TunnelBear è l'opzione consigliata se vuoi connetterti ai server TunnelBear sul tuo Mac. L'abbiamo progettata pensando alla tua esperienza, in modo da offrirti un facile accesso. Questo tutorial spiega come scaricare e installare l'app TunnelBear sui dispositivi MacOS, accedere e connettersi ai nostri server. Forniamo anche una panoramica delle impostazioni."
+                "L'applicazione nativa TunnelBear \u00e9 l'opzione consigliata se vuoi connetterti ai server TunnelBear sul tuo Mac. L'abbiamo progettata pensando alla tua esperienza, in modo da offrirti un facile accesso. Questo tutorial spiega come scaricare e installare l'app TunnelBear sui dispositivi MacOS, accedere e connettersi ai nostri server. Forniamo anche una panoramica delle impostazioni."
             ]
         },
         {

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+   
 <link rel="stylesheet" href="{{ url_for('static', filename='style_buono.css') }}">
 
 <head>
     <meta charset="UTF-8">
+    <meta  Encoding.UTF8.GetString(ms.ToArray())>
     <title>TunnelBear: Secure VPN Service</title>
     <link rel="shortcut icon" type="image/png" href="pic/favicon.png">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
@@ -39,6 +41,7 @@
                 <input type="text" placeholder="Write a message...">
                 <button class="chatbox__send--footer send__button">Send</button>
             </div>
+            
         </div>
         <div class="chatbox__button">
             <button><img src="{{ url_for('static', filename='../static/pic/chatbox-icon.svg') }}" /></button>
@@ -50,6 +53,7 @@
         $SCRIPT_ROOT : {{ request.script_root|tojson }};
     </script>
     <script type="text/javascript" src="{{ url_for('static', filename='../static/app.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='../static/script_wp.js') }}"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 
