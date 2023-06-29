@@ -7,7 +7,7 @@ app = Flask(__name__, template_folder='template') #  template_folder='templates'
 
 @app.get("/")
 def index_get():
-    return render_template("index_buono.html")
+    return render_template("index.html")
 
 @app.post("/predict")
 def predict():
@@ -21,3 +21,6 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True) # host='127.0.0.2'
+
+
+###

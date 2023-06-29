@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-  
+
 <head>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
 	<title>TunnelBear: Secure VPN Service</title>
-	<link rel="shortcut icon" type="image/png" href="pic/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="static/pic/favicon.png">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<!-- <link rel="stylesheet" type="text/css" href="../static/style.css"> -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body style="margin: 0">
 <div>
-	<img src="tunnelbear.png" style="width: 100%; height:auto;">
+	<img src="static/pic/tunnelbear.png" style="width: 100%; height:auto;">
 </div>
 <div id="body"> 
   
@@ -24,9 +24,8 @@
 	</div>
   
   <div class="chat-box">
-    <img src="pic\tunnelbear.png" width="80" class="bear">
+    <img src="static/pic/logo_bear.png" width="164" class="bear">
     <!--<div class="occhi">
-      "..\pic\bear_logo.png"
     <div class="eye1"><div class="pupil"></div></div>
     <div class="eye2"><div class="pupil"></div></div>
     </div>-->
@@ -43,7 +42,7 @@
     <div class="chat-input">      
       <form>
         <input type="text" id="chat-input" placeholder="Send a message..."/>
-      <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+      <button type="submit" class="chat-submit" id="chat-submit"> <i class="material-icons">send</i></button>
       </form>
       <div class="rat">     
     <div class="rating">
@@ -60,16 +59,13 @@
 </div>
 <div style="font-size: 1em; color: rgb(102 102 102); margin-top: 1px"><b>&nbsp;&nbsp;&nbsp;&nbsp;Feedback chat</b></div> 
     </div>
+
+
+
   </div>  
 </div>
-<img src="{{ url_for('static', filename='pic/tunnelbear.png') }}"/>
-<script>
-  $SCRIPT_ROOT: {{ request.script_root | tojson }};
-</script>
-<script type="test/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="script.js"></script> -->
-
+<script type="text/javascript" src="{{ url_for('static', filename='../static/script.js') }}"></script>
 </body>
 </html>
