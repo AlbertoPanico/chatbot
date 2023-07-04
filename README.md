@@ -27,12 +27,13 @@ We have defined our intent in intents.json, with tag and pattern, this help us f
 2. ### NLTK.
 We use the nltk library to work with the words (`nltk_utils.py`), in particular we use nltk to tokenize and stem the text.
 
-3. ### TRAINING OF THE MODEL.
+3. ### CREATE OUR NEURAL NETWORK.
+We use a feed forward neural network. The input layer is fully-connected, it has the number of pattern as dimension, then we have 2 hidden layer, in the end we have an output layer with the number of classes as dimension. Now we apply a softmax to get y (the response is given if it has at least 75% according to the training part).
+
+
+4. ### TRAINING OF THE MODEL.
 Now we want to train the model (`train.py`), so we import the function we had written in `nltk_utils.py`.
 We use [pytorch](https://pytorch.org/)
-
-4. ### CREATE OUR NEURAL NETWORK.
-We use a feed forward neural network. The input layer is fully-connected, it has the number of pattern as dimension, then we have 2 hidden layer, in the end we have an output layer with the number of classes as dimension. Now we apply a softmax to get y (the response is given if it has at least 75% according to the training part).
 
 5. ### CHATBOT.
 We can find the logic of the chatbot in `app.js`. The chatbot (Yoghi is the name we have assigned to it) initially says to you what he can do with a welcome message, then you can type the message. He is able to answer at typical questions you can ask to a VPN service. If the message is longer then 100 character or you ask something he is not trained for, he displays an error message.
