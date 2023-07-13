@@ -6,7 +6,7 @@ from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-with open('python/intents.json', 'r') as f:
+with open('intents.json', 'r') as f:
     intents = json.load(f)
 
 FILE = "data.pth"
@@ -26,17 +26,13 @@ model.eval()
 
 # ------------------ chatbot ----------------------
 
-bot_name = "John"
-print("Ciao! premi Q per uscire")
-while True:
-    sentence = input('Tu: ')
-    if (sentence == "Q" or sentence == "q") :
-        break
+bot_name = "Yoghi"
 
-    sentence = tokenize(sentence)
+def get_response(msg):
+    sentence = tokenize(msg)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1, x.shape[0])
-    x = torch.from_numpy(x)
+    x = torch.from_numpy(x).to(device)
 
     output = model(x)
     _, predicted = torch.max(output, dim=1)
@@ -49,7 +45,32 @@ while True:
     if prob.item() > 0.75:
         for intent in intents["intents"]:
            if tag == intent["tag"]:
-              print(f'{bot_name}: {random.choice(intent["responses"])}')
+               # print(f'{bot_name}: {random.choice(intent["responses"])}')
+               return random.choice(intent["responses"])
 
     else:
         print(f'{bot_name}: Scusami, non ho capito.')
+        return "Scusami, non ho capito."
+
+
+
+
+if __name__ == "__main__":
+    print("Ciao! premi Q per uscire")
+    while True:
+        sentence = input('Tu: ')
+        if (sentence == "Q" or sentence == "q") :
+            break
+
+        resp = get_response(sentence)
+        print(resp)
+
+
+
+
+
+
+
+
+
+

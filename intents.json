@@ -1,0 +1,156 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Ciao",
+                "Buongiorno",
+                "Buonasera",
+                "Hey",
+                "Hi",
+                "Hello"
+            ],
+            "responses": [
+                "Ciao, posso esserti utile in qualche maniera?",
+                "Ciao, come posso rendermi utile?",
+                "Ciao, cosa posso fare per te?"
+            ],
+            "context": [
+                ""
+            ]
+
+        },
+        {
+            "tag": "funzionamento",
+            "patterns": [
+                "come funziona?",
+                "puoi spiegarmi come funziona?",
+                "come faccio ad usarlo?"
+
+            ],
+            "responses": [
+                "Per utilizzare l'app di TunnelBear, basta scaricare l'app,  accedere (o registrarti), e connetterti ad un server vpn. Una volta fatto la tua connessione sar\u00e1 rapida e sicura."
+            ],
+            "context":[]
+
+        },
+        {
+            "tag": "vpn",
+            "patterns": [
+                "come funziona una vpn?",
+                "cos' \u00e9 una vpn?"
+
+            ],
+            "responses": [
+                "Una VPN (Virtual Private Network) \u00e9 un servizio che protegge la connessione internet e la privacy online. Troverai maggiori informazioni al seguente link: https://www.tunnelbear.com/what-is-vpn"
+            ],
+            "context":[]
+
+        },
+        {
+            "tag": "costo",
+            "patterns": [
+                "quanto costa?",
+                "quali sono le varie opzioni di abbonamento?",
+                "qual \u00e9 il prezzo?"
+
+            ],
+            "responses": [
+                "C'\u00e9 un piano gratuito e 2 opzioni di abbonamento. Consultale al seguente link: https://www.tunnelbear.com/pricing"
+            ],
+            "context":[]
+
+        },
+        {
+            "tag": "android",
+            "patterns": [
+                "Posso usare Tunnel Bear anche sul mio smartphone Android?",
+                "Come posso usare Tunnel Bear sul mio Android?",
+                "Posso usarlo sul mio telefono android?",
+                "posso usarlo sul mio android?"
+
+            ],
+            "responses": [
+                "Per iniziare a utilizzare TunnelBear sul tuo dispositivo Android, tutto ci\u00f3 che devi fare \u00e9 scaricare l'app TunnelBear. Trovi le istruzioni al seguente link: https://www.tunnelbear.com/apps/android"
+            ],
+            "context":[]
+        },
+        {           
+             "tag": "pc",
+             "patterns": [
+                "Posso usare Tunnel Bear sul mio PC?",          
+                "Come posso usare Tunnel Bear sul mio PC?",
+                "Posso usarlo sul computer",
+                "posso utilizzarlo sul mio pc?"
+
+            ],
+            "responses":["L'applicazione nativa TunnelBear \u00e9 l'opzione consigliata se vuoi connetterti ai server TunnelBear sul tuo PC Windows. Scaricala da qui: https://www.tunnelbear.com/apps/browser"
+            ],   
+            "context":[]
+
+        },
+        {
+            "tag":"iOS",   
+            "patterns":[
+                "Posso usare Tunnel Bear sul mio iPhone?",
+                "Come posso usare Tunnel Bear sul mio iPad?",
+                "Posso usarlo sull'ipad",
+                "Posso usarlo sull'iphone"
+            ],     
+            "responses":[
+                "Per iniziare a utilizzare TunnelBear sul tuo dispositivo iOS, tutto ci\u00f3 che devi fare \u00e9 scaricare l'app TunnelBear. Trovi le istruzioni al seguente link: https://www.tunnelbear.com/apps/ios"
+            ],
+            "context":[]
+
+        },
+        {
+            "tag":"Mac",
+            "patterns":[
+                "Posso usare Tunnel Bear sul mio Mac?",
+                "Come posso usare Tunnel Bear sul mio Mac?",
+                "Posso usarlo sul mac"
+            ],
+            "responses":[
+                "L'applicazione nativa TunnelBear \u00e9 l'opzione consigliata se vuoi connetterti ai server TunnelBear sul tuo Mac. Scaricala da qui: https://www.tunnelbear.com/apps/mac"
+            ]
+        },
+        {
+            "tag":"Chrome",
+            "patterns":[
+                "Posso usare Tunnel Bear attraverso un’estensione Google Chrome?",
+                "Posso usare Tunnel Bear su Chrome?",
+                "Posso utilizzarlo su Chrome?"
+            ],
+            "responses":[
+                "Se vuoi navigare in modo sicuro sul tuo dispositivo o nel tuo browser Firefox, puoi utilizzare la nostra apposita estensione che protegge il tuo traffico con HTTPS. Trovi le istruzioni al seguente link: https://www.tunnelbear.com/apps/browser"
+            ]
+
+        },
+        {
+            "tag":"firefox",
+            "patterns":[
+                "Posso usare Tunnel Bear attraverso un’estensione Firefox?",
+                "Posso usare Tunnel Bear su Firefox?",
+                "Posso usarlo Firefox?"
+            ],
+            "responses":[
+                "Se vuoi navigare in modo sicuro sul tuo dispositivo o nel tuo browser Firefox, puoi utilizzare la nostra apposita estensione che protegge il tuo traffico con HTTPS. Trovi le istruzioni al seguente link: https://www.tunnelbear.com/apps/browser"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Arrivederci",
+                "Buona giornata",
+                "Buona serata",
+                "Grazie",
+                "Ok grazie"
+            ],
+            "responses": [
+                "Alla prossima!",
+                "Ti auguro buona giornata!",
+                "Spero di aver risolto il tuo problema, alla prossima!"
+            ]
+        }
+]
+}
