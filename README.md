@@ -1,6 +1,6 @@
 # Chatbot
 This projeect is made by **Alberto Panico**, **Angelo Nardella** and **Andrea Nigro**.  
-We have created a chatbot for Tunnelbear that is able to give answer to tipical answer for a VPN service. 
+We have created a chatbot for Tunnelbear that is able to give answer to typical answer for a VPN service. 
 
 ## Install
 ```bash
