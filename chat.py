@@ -29,7 +29,7 @@ model.eval()
 bot_name = "Yoghi"
 
 def get_response(msg):
-    sentence = tokenize(msg)
+    sentence = tokenize(msg) 
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1, x.shape[0])
     x = torch.from_numpy(x).to(device)
