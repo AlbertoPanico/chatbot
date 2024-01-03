@@ -1,5 +1,5 @@
 # Chatbot
-This projeect is made by **Alberto Panico**, **Angelo Nardella** and **Andrea Nigro**.  
+This project is made by **Alberto Panico**, **Angelo Nardella** and **Andrea Nigro**.  
 
 ## Install
 ```bash
@@ -22,7 +22,7 @@ python python/chat.py
 ## How Does It Works?
 
 1. ### DEFINE INTETNTS. 
-We have defined our intent in intents.json, with tag and pattern, this help us for the training of the model.
+We have defined our intents in intents.json, with tag and pattern, this help us for the training of the model.
 
 2. ### NLTK.
 We use the nltk library to work with the words (`nltk_utils.py`), in particular we use nltk to tokenize and stem the text.
@@ -36,7 +36,7 @@ Now we want to train the model (`train.py`), so we import the function we had wr
 We use [pytorch](https://pytorch.org/)
 
 5. ### CHATBOT.
-We can find the logic of the chatbot in `app.js`. The chatbot (Yoghi is the name we have assigned to it) initially says to you what he can do with a welcome message, then you can type the message. He is able to answer at typical questions you can ask to a VPN service. If the message is longer then 100 character or you ask something he is not trained for, he displays an error message.
+We can find the logic of the chatbot in `app.js`. The chatbot (Yoghi is the name we have assigned to it) initially says to you what he can do with a welcome message, then you can type the message. He is able to answer at typical questions you can ask to a VPN service. If the message is longer then 100 character or you ask something he is not trained for, he reply with an error message.
 
 6. ### CONNECT TO THE WEBSITE.
 We use Flask (`app.py`) to create our API.

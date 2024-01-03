@@ -1,4 +1,3 @@
-import torch
 import torch.nn as nn
 
 # let's create our neural network
