@@ -1,5 +1,3 @@
-# Chatbot
-This project is made by **Alberto Panico**, **Angelo Nardella** and **Andrea Nigro**.  
 
 ## Install
 ```bash
